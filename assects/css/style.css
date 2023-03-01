@@ -122,19 +122,36 @@
     background: #1f2128;
 }
 
-.logo-area a {
-    display: flex;
-    padding: 48px 30px;
-    flex-direction: row;
-    align-items: center;
-    width: 256px;
-    height: 40px;
-}
-
 .logo-area h2 {
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 32px;
+}
+
+.logo-area {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.responsive_icon li {
+    background-color: #fff;
+    height: 2px;
+    width: 32px;
+}
+
+.logo-area a {
+    display: flex;
+    align-items: center;
+}
+
+
+/* responsive_icon   */
+
+span.responsive_icon {
+    display: none;
 }
 
 .admin-tool {
