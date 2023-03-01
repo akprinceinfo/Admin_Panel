@@ -1,0 +1,726 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+    --bg-color: #242731;
+    --text-color: #808191;
+    --primary-color: #6c5dd3;
+    --devider-color: #494949;
+    --hover-texi-color: #fff;
+    --header-color: #ffffff;
+    --trans-dura: 1s;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Poppins, sans-serif;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.67%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.67%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.67%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.67%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.padding-left-10 {
+    padding-right: 10px;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-x-30 {
+    padding: 0 30px;
+}
+
+.padding-y-30 {
+    padding: 30px 0px;
+}
+
+.padding-xy-20 {
+    padding: 20px;
+}
+
+.padding-xy-30 {
+    padding: 30px;
+}
+
+
+/* --------------------------   */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+    background: #1f2128;
+}
+
+.logo-area a {
+    display: flex;
+    padding: 48px 30px;
+    flex-direction: row;
+    align-items: center;
+    width: 256px;
+    height: 40px;
+}
+
+.logo-area h2 {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.admin-tool {
+    min-width: 216px;
+    height: 480px;
+    padding: 0 20px;
+}
+
+.menu-bar {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    background: var(--bg-color);
+    width: 256px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    max-height: 667px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    height: 56px;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    transition: var(--trans-dura);
+    width: 216px;
+}
+
+nav li .icon {
+    min-width: 45px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+}
+
+nav li .text {
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 125px;
+}
+
+li.nav-link a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 16px;
+    transition: var(--trans-dura);
+    color: var(--text-color);
+}
+
+li.nav-link a:hover {
+    background: var(--primary-color);
+    color: rgb(255, 255, 255);
+}
+
+.menu {
+    position: relative;
+}
+
+.menu::after {
+    content: "";
+    clear: both;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--devider-color);
+    margin-bottom: 73px;
+    margin-top: 73px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+nav {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.nav-footer li .roundet {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 117, 76);
+    border-radius: 50%;
+    color: var(--hover-texi-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-footer {
+    margin: 40% 0px;
+    padding: 0 20px;
+}
+
+.user {
+    width: 256px;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.user-changeIcone {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-changeIcone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-content {
+    display: flex;
+    flex-direction: row;
+    min-width: 140px;
+    justify-content: space-between;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name h5 {
+    color: rgb(255, 255, 255);
+}
+
+.user-name p {
+    color: var(--text-color);
+}
+
+.user-changeIcone i {
+    color: rgb(255, 255, 255);
+}
+
+
+/* this is header main section  */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100% - 250px);
+    align-self: end;
+    padding-left: 30px;
+}
+
+
+/* this is  container  section */
+
+.container {
+    display: flex;
+    width: 100%;
+    background: #1f2128;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+
+/* this is header section  */
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    background: #1f2128;
+    width: 100%;
+}
+
+
+/* ----------------- 
+    this is header section css
+-------------------*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 256px);
+    overflow-y: scroll;
+}
+
+.header-left {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    color: var(--header-color);
+    justify-content: center;
+    position: relative;
+}
+
+.header-left::before {
+    content: "";
+    clear: both;
+    border: 1px solid var(--devider-color);
+    height: 99vh;
+    transform: rotate(180deg);
+    left: 0px;
+    position: absolute;
+    top: 0;
+}
+
+.header-right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.header-left h2 {
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.header-left h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-scrch i {
+    color: var(--header-color);
+    padding: 2px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-scrch input[type="search"] {
+    background: none;
+    border: none;
+    padding: 6px;
+    color: #fff;
+    cursor: pointer;
+    max-width: 10rem;
+}
+
+.header-scrch ::placeholder {
+    color: var(--header-color);
+}
+
+.header-scrch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 13px;
+    align-items: end;
+}
+
+.header-notefechation .notefechation {
+    width: 45px;
+    height: 45px;
+    background-color: #242731;
+    color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.notefechation-count {
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ff754c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -15px;
+    font-size: 18px;
+    top: -5px;
+}
+
+
+/* -----------
+    this is contents-section section start 
+----------*/
+
+.contents-section {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: scroll;
+    height: 145vh;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.contents-section::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.contents-section {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.contents-left {
+    height: 128vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contents-left::before {
+    content: "";
+    clear: both;
+    border: 1px solid var(--devider-color);
+    height: 103%;
+    transform: rotate(180deg);
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+/* contents-left-top */
+
+
+/* ---------------Start------------------- */
+
+.contents-left-top {
+    height: 331px;
+    margin: 20px;
+    display: flex;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    position: relative;
+    box-shadow: rgb(255 255 255) 0px 28px 3px -16px;
+}
+
+span.closeButton i {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.contents-left-top-text h2 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contents-left-top-text input {
+    width: 159px;
+    height: 56px;
+    font-size: 20px;
+    border-radius: 16px;
+    border: none;
+    background: #242731;
+    color: #ffff;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+.contents-left-top-text p {
+    color: #fff;
+    padding: 5% 0;
+}
+
+.contents-left-top-text.col-5 {
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* earning-grap-chart */
+
+.contents-left-bottom-right {
+    background-color: var(--primary-color);
+    width: 305px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 16px;
+}
+
+.earning {
+    width: 298px;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.earning-grap-chart {
+    background: #242731;
+    color: #ffffff;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.earning-grap-chart input {
+    padding: 15px 65px;
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    border-radius: 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.earning-header h3 {
+    padding: 10px 0px 40px 0;
+    color: #fff;
+    font-weight: 400;
+}
+
+span.earning-list-icone {
+    display: flex;
+    align-items: center;
+}
+
+
+/* --------------------End-------------- */
+
+
+/* --------------------Bottem Start-------------- */
+
+.contents-left-bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents-left-bottom-left h3 {
+    color: #fff;
+    font-weight: 400;
+    padding-top: 10%;
+}
+
+ul.earning-list li {
+    width: 100%;
+    height: 50px;
+    margin: 48px 0;
+}
+
+ul.earning-list li a {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #fff;
+}
+
+.earning-list-text h1 {
+    font-weight: 500;
+    padding-top: 7px;
+}
+
+.earning-list-text p {
+    font-weight: 200;
+    color: var(--text-color);
+}
+
+.earning-list-icone i {
+    padding-top: 8px;
+}
+
+.contents-left-bottom-left {
+    width: 305px;
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    padding: 0 3%;
+    background-color: #242731;
+    border-radius: 16px;
+}
+
+
+/* --------------------Bottem End-------------- */
+
+
+/* contents-left-bottom */
+
+.contents-right {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contents-right-top {
+    background-color: #242731;
+    padding: 32px 32px 57px 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 14px 21px -6px rgba(0, 0, 0, 1);
+}
+
+.contents-right-top h6 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contents-right-top p {
+    color: var(--text-color);
+    padding: 25px 0;
+}
+
+.contents-right-top button {
+    padding: 18px 43px 18px 44px;
+    background: #1f2128;
+    border-radius: 16px;
+    color: #6c5dd3;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.contents-right-top button:hover {
+    background: var(--primary-color);
+    color: var(--hover-texi-color);
+    transition: var(--trans-dura);
+}
+
+.contents-right-top h2 {
+    font-size: 65px;
+    font-weight: 500;
+    color: #6c5dd3;
+    padding: 2px 0px;
+}
+
+.contents-right-bottom h6 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contents-right-bottom.row {
+    padding: 10px 10px;
+    width: 310px;
+    height: 365px;
+}
