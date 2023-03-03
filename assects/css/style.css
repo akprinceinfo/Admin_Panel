@@ -165,6 +165,7 @@ span.responsive_icon {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
 }
 
 nav {
@@ -175,7 +176,6 @@ nav {
     top: 0px;
     bottom: 0px;
     max-height: 667px;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
 }
@@ -234,16 +234,16 @@ li.nav-link a:hover {
 }
 
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+/*  Hide scrollbar for Chrome, Safari and Opera */
 
-nav::-webkit-scrollbar {
+.menu-bar::-webkit-scrollbar {
     display: none;
 }
 
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
-nav {
+.menu-bar {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
