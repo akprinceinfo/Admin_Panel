@@ -19,7 +19,13 @@
 
 @media only screen and (max-width: 1024px) {
     span.responsive_icon {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .responsive_icon a {
+        display: flex;
+        flex-direction: column;
     }
     .contents-left {
         width: 100%;
