@@ -460,11 +460,12 @@ header {
 
 .contents-left {
     height: auto;
-    width: 66.67%;
+    max-width: 43rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 50rem;
 }
 
 
@@ -474,13 +475,13 @@ header {
 /* ---------------Start------------------- */
 
 .contents-left-top {
-    height: 20.6875rem;
-    margin: 20px;
+    min-height: 21.6875rem;
+    margin: 1rem 0rem 2rem 0;
     display: flex;
     background-color: var(--primary-color);
     border-radius: 16px;
     position: relative;
-    box-shadow: 0px 20px 3px -10px rgb(255 255 255);
+    box-shadow: 0px 23px 6px -10px rgb(255 255 255);
 }
 
 span.closeButton i {
@@ -539,7 +540,10 @@ span.closeButton i {
 }
 
 .contents-left-top-slider {
-    width: 58.33%;
+    width: 53.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -586,7 +590,7 @@ span.closeButton i {
     font-weight: 400;
 }
 
-span.earning-list-icone {
+.earning-list-right {
     display: flex;
     align-items: center;
 }
@@ -612,6 +616,17 @@ ul.earning-list li {
     width: 100%;
     height: 50px;
     margin: 48px 0;
+}
+
+.earning-list-left {
+    display: flex;
+    min-width: 11rem;
+    justify-content: space-between;
+}
+
+.earning-list-left span {
+    max-width: 4.5rem;
+    /* display: block; */
 }
 
 ul.earning-list li a {
@@ -652,7 +667,7 @@ ul.earning-list li a {
 /* contents-left-bottom */
 
 .contents-right {
-    height: auto;
+    height: 50rem;
     width: 33.33%;
     display: flex;
     flex-direction: column;
@@ -661,9 +676,11 @@ ul.earning-list li a {
 
 .contents-right-top {
     background-color: #242731;
-    padding: 32px 32px 57px 33px;
+    /* padding: 32px 32px 57px 33px; */
+    min-height: 22rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     box-shadow: 0px 14px 21px -6px rgba(0, 0, 0, 1);
 }
@@ -711,6 +728,5 @@ ul.earning-list li a {
 
 .contents-right-bottom.row {
     padding: 10px 10px;
-    width: 19.375rem;
-    height: 22.8125rem;
+    height: 22rem;
 }

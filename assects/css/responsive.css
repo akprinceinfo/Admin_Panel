@@ -7,12 +7,31 @@
 
 /* Huge size (Larger screen)  */
 
-@media only screen and (max-width: 1281px) {}
+@media only screen and (max-width: 1281px) {
+    body {
+        color: green;
+    }
+}
 
 
 /* Desktops size  */
 
-@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1440px) {
+    .contents-left-top-text h2 {
+        font-size: 2rem;
+    }
+    .contents-left-bottom-left {
+        width: 20rem;
+        padding: 0 2%;
+    }
+    .contents-left-bottom-right {
+        width: 20rem;
+        padding: 0 2%;
+    }
+    .contents-left-top {
+        max-width: 45rem;
+    }
+}
 
 
 /* Tablets Ipads  */
