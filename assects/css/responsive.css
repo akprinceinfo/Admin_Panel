@@ -7,12 +7,6 @@
 
 /* Huge size (Larger screen)  */
 
-@media only screen and (max-width: 1281px) {
-    body {
-        color: green;
-    }
-}
-
 
 /* Desktops size  */
 
@@ -21,11 +15,11 @@
         font-size: 2rem;
     }
     .contents-left-bottom-left {
-        width: 20rem;
+        width: 19rem;
         padding: 0 2%;
     }
     .contents-left-bottom-right {
-        width: 20rem;
+        width: 19rem;
         padding: 0 2%;
     }
     .contents-left-top {
