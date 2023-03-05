@@ -436,7 +436,7 @@ header {
 
 .contents-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow-y: scroll;
     height: auto;
 }
@@ -603,7 +603,7 @@ span.closeButton i {
 
 .contents-left-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contents-left-bottom-left h3 {
