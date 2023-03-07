@@ -25,6 +25,15 @@
     .contents-left-top {
         max-width: 45rem;
     }
+    .contents-right {
+        width: 30.33%;
+    }
+    .contents-right-top {
+        max-width: 19.0625rem;
+    }
+    canvas#bar-chart-grouped {
+        max-width: 19.0625rem;
+    }
 }
 
 
@@ -62,6 +71,17 @@
         align-items: center;
     }
     .contents-section {
-        height: 600px;
+        /* height: 600px; */
+        width: 100%;
+    }
+    .contents-right-top {
+        min-width: 19rem;
+    }
+    .contents-right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 6%;
     }
 }
